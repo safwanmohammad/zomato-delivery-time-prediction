@@ -6,9 +6,9 @@ import sklearn
 import xgboost
 import sys
 
-st.write("Python:", sys.version)
-st.write("Sklearn:", sklearn.__version__)
-st.write("XGBoost:", xgboost.__version__)
+# st.write("Python:", sys.version)
+# st.write("Sklearn:", sklearn.__version__)
+# st.write("XGBoost:", xgboost.__version__)
 
 
 # load artifacts
@@ -246,4 +246,3 @@ if st.button("Predict Delivery Time"):
     prediction = model.predict(df)[0]
 
     st.success(f"Predicted Delivery Time : {round(prediction)} Minutes")
-    st.write(df)
