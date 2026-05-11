@@ -23,7 +23,7 @@ st.markdown("""
 
 
 # Image
-image = Image.open(r"C:\Users\babus\Data_Spark\Project\Zomato\Deployment\image.png")
+image = Image.open("images/image.png")
 st.image(image,width=800)
 
 
