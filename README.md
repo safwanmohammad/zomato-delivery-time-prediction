@@ -16,11 +16,16 @@ This project predicts food delivery time using Machine Learning.
 
 The application was deployed using Streamlit.
 
-## Application Screenshot
+## Application Screenshots
 
-![App Screenshot](images/app_screenshot_1.png)
-![App Screenshot](images/app_screenshot_2.png)
-![App Screenshot](images/app_screenshot_3.png)
+### Low Delivery Prediction
+![Home Interface](images/Low_delivery_time_prediction.png)
+
+### Medium Delivery Prediction
+![Medium Delivery Prediction](images/Moderate_delivery_time.png)
+
+### High Delivery Prediction
+![High Delivery Prediction](images/High_delivery_time_prediction.png)
 
 ## Run Locally
 
