@@ -2,13 +2,7 @@ import streamlit as st
 import pickle
 from PIL import Image
 import pandas as pd
-import sklearn
-import xgboost
-import sys
 
-# st.write("Python:", sys.version)
-# st.write("Sklearn:", sklearn.__version__)
-# st.write("XGBoost:", xgboost.__version__)
 
 
 # load artifacts
@@ -97,16 +91,6 @@ festival_map = {
 festival_choice = st.selectbox("Festival",list(festival_map.keys()),label_visibility="collapsed")
 festival_value = festival_map[festival_choice]
 
-# Time_slot
-st.subheader("Time Slot")
-time_map = {
-    "Morning":0,
-    "Afternoon":1,
-    "Evening":2,
-    "Night": 3
-}
-time_choice = st.selectbox("Time",list(time_map.keys()),label_visibility="collapsed")
-time_value = time_map[time_choice]
 
 # Prepration_minute
 st.subheader("Preparation Time")
@@ -150,6 +134,18 @@ if peak_status == "Peak Hour":
     hour = 1
 else:
     hour = 0
+
+
+# Time_slot
+
+if ( selected_hour >= 6 ) and ( selected_hour <12 ):
+    time_value = 0
+elif ( selected_hour >= 12 ) and ( selected_hour < 17 ):
+    time_value = 1
+elif ( selected_hour >= 17 ) and ( selected_hour < 21 ):
+    time_value = 2
+else:
+    time_value = 3
 
 
 # Weather_conditions_

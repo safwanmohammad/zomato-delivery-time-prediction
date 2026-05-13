@@ -1,4 +1,4 @@
-# Zomato Food Delivery Time Prediction
+# Food Delivery Time Prediction
 
 ## Project Overview
 
